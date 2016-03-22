@@ -2,7 +2,7 @@
 
 FROM centos:centos7
 
-MAINTAINER Chris Birchall (chris.birchall@gmail.com)
+MAINTAINER Muzeeb Syed (muzeeb.syed@gmail.com)
 
 # Java installation.
 #
@@ -42,7 +42,7 @@ ADD ./start-script /usr/local
 RUN chmod a+x /usr/local/start-everything.sh
 
 # Clone the application itself
-RUN cd /usr/local && git clone https://github.com/cb372/ninja-sample.git
+RUN cd /usr/local && git clone https://github.com/muzeebullah/ninja-sample.git
 
 # Environment variables
 ENV JAVA_HOME /usr/java/latest
